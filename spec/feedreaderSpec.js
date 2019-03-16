@@ -28,8 +28,7 @@ $(function() {
 
 
         // Iterates over each entry to check that
-        // each one has a URL that is longer than
-        // zero characters
+        // each one has a URL longer than zero characters
          for (let feed of allFeeds) {
            it('has a URL', function() {
              expect(feed.url).toBeDefined();
@@ -39,8 +38,7 @@ $(function() {
 
 
         // Iterates over each entry to check that
-        // each one has a name that is longer than
-        // zero characters
+        // each one has a name longer than zero characters
          for (let feed of allFeeds) {
            it('has a name', function() {
              expect(feed.name).toBeDefined();
@@ -49,11 +47,9 @@ $(function() {
          }
     });
 
-
-    /* TODO: Write a new test suite named "The menu" */
     describe('The menu', function() {
 
-      // Checks the the 'menu-hidden' class is in use
+      // Checks that the 'menu-hidden' class is in use
       // in the html body
       it('is hidden by default', function() {
         expect($(document.body).hasClass('menu-hidden')).toBe(true);
@@ -71,8 +67,6 @@ $(function() {
 
     });
 
-
-    /* TODO: Write a new test suite named "Initial Entries" */
     describe('Initial Entries', function() {
 
       // Creates an array of all entries after loading
@@ -88,8 +82,6 @@ $(function() {
 
     });
 
-
-    /* TODO: Write a new test suite named "New Feed Selection" */
     describe('New Feed Selection', function() {
 
       // Creates temporary variables to assign to two
